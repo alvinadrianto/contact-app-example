@@ -6,10 +6,6 @@ const flash = require('connect-flash');
 const { body, check, validationResult } = require('express-validator');
 const methodOverride = require('method-override');
 
-const product = require('./api/product');
-app.use(express.json({ extended: false }));
-app.use('/api/product', product);
-
 require('./utils/db');
 const Contact = require('./model/contact');
 
